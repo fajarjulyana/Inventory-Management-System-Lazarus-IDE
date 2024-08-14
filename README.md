@@ -1,5 +1,5 @@
 # Aplikasi Manajemen Barang
-
+<img src="capture/capture-1.png">
 Aplikasi ini adalah aplikasi manajemen barang sederhana yang dibuat menggunakan Lazarus (Free Pascal). Aplikasi ini memungkinkan pengguna untuk menambah, mengedit, menghapus, dan menampilkan data barang, termasuk gambar barang yang disimpan dalam field BLOB pada database SQLite.
 
 ## Fitur
