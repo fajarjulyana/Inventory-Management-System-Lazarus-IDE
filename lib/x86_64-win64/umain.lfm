@@ -1,0 +1,275 @@
+object Form1: TForm1
+  Left = 413
+  Height = 462
+  Top = 191
+  Width = 831
+  Caption = 'Inventory Management System'
+  ClientHeight = 462
+  ClientWidth = 831
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  LCLVersion = '3.4.0.0'
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 377
+    Top = 80
+    Width = 417
+    Caption = 'Tabel Barang'
+    ClientHeight = 357
+    ClientWidth = 413
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 24
+      Height = 232
+      Top = 80
+      Width = 368
+      Color = clWindow
+      Columns = <>
+      DataSource = DataModule1.DataSource1
+      ReadOnly = True
+      TabOrder = 0
+      OnSelectEditor = DBGrid1SelectEditor
+    end
+    object SearchEdit: TEdit
+      Left = 24
+      Height = 23
+      Top = 48
+      Width = 368
+      TabOrder = 1
+      TextHint = 'Search Result'
+      OnChange = SearchEditChange
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 448
+    Height = 376
+    Top = 81
+    Width = 345
+    Caption = 'Editor Tabel'
+    ClientHeight = 356
+    ClientWidth = 341
+    TabOrder = 1
+    object Button1: TButton
+      Left = 257
+      Height = 25
+      Top = 208
+      Width = 75
+      Caption = 'Tambah'
+      TabOrder = 0
+      OnClick = Button1Click
+    end
+    object DateTimePicker1: TDateTimePicker
+      Left = 128
+      Height = 23
+      Top = 160
+      Width = 83
+      CenturyFrom = 1941
+      MaxDate = 2958465
+      MinDate = -53780
+      TabOrder = 1
+      Enabled = False
+      DateSeparator = '/'
+      TrailingSeparator = False
+      TextForNullDate = 'NULL'
+      LeadingZeros = True
+      Kind = dtkDate
+      TimeSeparator = '.'
+      DecimalSeparator = ','
+      TimeFormat = tf24
+      TimeDisplay = tdHMS
+      DateMode = dmComboBox
+      Date = 45516
+      Time = 0.444847476850555
+      UseDefaultSeparators = False
+      HideDateTimeParts = []
+      MonthNames = 'Long'
+    end
+    object Edit1: TEdit
+      Left = 131
+      Height = 23
+      Top = 56
+      Width = 80
+      Enabled = False
+      TabOrder = 2
+      TextHint = 'Masukan ID'
+    end
+    object Edit2: TEdit
+      Left = 131
+      Height = 23
+      Top = 88
+      Width = 80
+      Enabled = False
+      TabOrder = 3
+      TextHint = 'Nama Barang'
+    end
+    object Edit3: TEdit
+      Left = 131
+      Height = 23
+      Top = 120
+      Width = 80
+      Enabled = False
+      NumbersOnly = True
+      TabOrder = 4
+      TextHint = 'Jumlah Barang'
+    end
+    object Image1: TImage
+      Left = 128
+      Height = 90
+      Top = 222
+      Width = 90
+      Stretch = True
+    end
+    object Button2: TButton
+      Left = 257
+      Height = 25
+      Top = 287
+      Width = 75
+      Caption = 'Hapus'
+      TabOrder = 5
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 134
+      Height = 25
+      Top = 192
+      Width = 75
+      Caption = 'Gambar'
+      Enabled = False
+      TabOrder = 6
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 256
+      Height = 25
+      Top = 248
+      Width = 75
+      Caption = 'Edit'
+      TabOrder = 7
+      OnClick = Button4Click
+    end
+    object Label1: TLabel
+      Left = 52
+      Height = 15
+      Top = 60
+      Width = 51
+      Caption = 'ID Barang'
+    end
+    object Label2: TLabel
+      Left = 52
+      Height = 15
+      Top = 89
+      Width = 37
+      Caption = 'Barang'
+    end
+    object Label3: TLabel
+      Left = 52
+      Height = 15
+      Top = 121
+      Width = 23
+      Caption = 'Stok'
+    end
+    object Label4: TLabel
+      Left = 52
+      Height = 15
+      Top = 162
+      Width = 42
+      Caption = 'Tanggal'
+    end
+    object Label5: TLabel
+      Left = 52
+      Height = 15
+      Top = 198
+      Width = 42
+      Caption = 'Gambar'
+    end
+    object Button5: TButton
+      Left = 256
+      Height = 25
+      Top = 176
+      Width = 75
+      Caption = 'Cetak'
+      TabOrder = 8
+      OnClick = Button5Click
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 66
+    Top = 0
+    Width = 831
+    Align = alTop
+    Caption = 'Inventory Management System'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = Panel1Click
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 592
+    Top = 24
+  end
+  object frDesigner1: TfrDesigner
+    OnLoadReport = frDesigner1LoadReport
+    Left = 712
+    Top = 24
+  end
+  object frReport1: TfrReport
+    Dataset = frDBDataSet1
+    InitialZoom = pzDefault
+    Options = []
+    PreviewButtons = [pbZoom, pbLoad, pbSave, pbPrint, pbFind, pbHelp, pbExit, pbSettings, pbPageSetup]
+    DataType = dtDataSource
+    Left = 680
+    Top = 24
+  end
+  object frDBDataSet1: TfrDBDataSet
+    DataSet = QueryPrint
+    Left = 648
+    Top = 24
+  end
+  object QueryPrint: TSQLQuery
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id_barang'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'nama_barang'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'stok_barang'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'gambar_barang'
+        DataType = ftBlob
+        Precision = -1
+      end    
+      item
+        Name = 'Tanggal_masuk'
+        DataType = ftDateTime
+        Precision = -1
+      end>
+    Database = DataModule1.SQLite3Connection1
+    Transaction = DataModule1.SQLTransaction1
+    SQL.Strings = (
+      'Select * From barang'
+    )
+    Params = <>
+    Macros = <>
+    Left = 616
+    Top = 24
+  end
+end

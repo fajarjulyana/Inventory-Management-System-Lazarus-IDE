@@ -1,0 +1,83 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 256
+  VerticalOffset = 145
+  Width = 150
+  object SQLite3Connection1: TSQLite3Connection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'db.db3'
+    KeepConnection = False
+    Transaction = SQLTransaction1
+    AlwaysUseBigint = False
+    Left = 32
+    Top = 20
+  end
+  object QueryBrg: TSQLQuery
+    PacketRecords = 1
+    IndexName = 'DEFAULT_ORDER'
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id_barang'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'nama_barang'
+        DataType = ftString
+        Precision = -1
+        Size = 255
+      end    
+      item
+        Name = 'stok_barang'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'gambar_barang'
+        DataType = ftBlob
+        Precision = -1
+      end    
+      item
+        Name = 'Tanggal_masuk'
+        DataType = ftDateTime
+        Precision = -1
+      end>
+    Database = SQLite3Connection1
+    Transaction = SQLTransaction1
+    SQL.Strings = (
+      'select * from barang'
+    )
+    UpdateSQL.Strings = (
+      'UPDATE barang SET nama_barang = :Nama, stok_barang = :Stok, tanggal_masuk =:tanggal Where id_barang = id_barang'
+      ''
+    )
+    DeleteSQL.Strings = (
+      'DELETE FROM barang WHERE id_barang = id_barang'
+      ''
+    )
+    RefreshSQL.Strings = (
+      'select * from barang'
+    )
+    Params = <>
+    Macros = <>
+    Left = 24
+    Top = 80
+  end
+  object DataSource1: TDataSource
+    DataSet = QueryBrg
+    OnUpdateData = DataSource1UpdateData
+    Left = 86
+    Top = 20
+  end
+  object SQLTransaction1: TSQLTransaction
+    Active = False
+    Action = caCommit
+    Database = SQLite3Connection1
+    Left = 91
+    Top = 85
+  end
+end

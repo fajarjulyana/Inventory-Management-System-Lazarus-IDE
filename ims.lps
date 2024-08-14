@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ims.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="33"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\umain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="91"/>
+        <CursorPos X="37" Y="99"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="src\udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="23"/>
+        <CursorPos X="3" Y="37"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\dbimage.inc"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="147"/>
+        <CursorPos Y="155"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\dbcustomnavigator.inc"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="483"/>
+        <CursorPos Y="491"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1090"/>
+        <CursorPos Y="1099"/>
+        <UsageCount Value="14"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\png.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="31"/>
+        <CursorPos Y="40"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="126" Column="3" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="188" Column="20" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="145" Column="32" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="127" Column="21" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="266" Column="29" TopLine="250"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="263" Column="8" TopLine="254"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="264" Column="5" TopLine="251"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="188" Column="6" TopLine="175"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="102" Column="105" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="57" Column="44" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="132" Column="20" TopLine="115"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="119" Column="4" TopLine="110"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="118" Column="36" TopLine="111"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="57" Column="25" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="188" Column="23" TopLine="179"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="57" Column="29" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="118" Column="32" TopLine="109"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="188" Column="25" TopLine="179"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="194" Column="25" TopLine="185"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="265" Column="23" TopLine="256"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="135" Column="26" TopLine="118"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="188" Column="26" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="267" Column="27" TopLine="262"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="275" Column="29" TopLine="259"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="223" Column="28" TopLine="209"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="201" Column="22" TopLine="192"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="244" Column="27" TopLine="226"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="141" Column="41" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="189" Column="28" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="src\umain.pas"/>
+        <Caret Line="82" TopLine="82"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
